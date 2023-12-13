@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800;900&display=swap');
+body{
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif !important;
+}
+main{
+    isolation: isolate;
+}
+.hero_section{
+    background-color: #fff2ef;
+    /* background-image: url('./assets/pexels-ronaldo.jpg'); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    isolation: isolate;
+    z-index: -1;
+}
+.hero_section::after{
+    content: '';
+    position: absolute;
+    /* background-color: #ff0000; */
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+}
+.hero_section >*{
+    position: relative;
+    isolation: isolate;
+    z-index: 15;
+}
+.hero_section h1{
+    color: #ff0000;
+    font-size: 58px;
+    font-weight: 700;
+}
+.sec_headign span{
+    display: block;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    font-size: 2.1em;
+    line-height: 1.4;
+    font-weight: 700;
+    color: #343434;
+    margin-bottom: 0.5em;
+}
+.sec_headign p{
+    font-size: 1.4em;
+    line-height: 1.68em;
+    margin-top: 0;
+    text-align: center;
+}
+.sec_headign
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+.service_1
+{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.service_1 span,   .service_1 p{
+    text-align: center;
+}
+p{
+    font-size: 16px ;
+
+}
+.service_1 p{
+    margin: 10px 0 0;
+}
+.service_1 span
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.15em;
+    line-height: 1.25;
+    font-weight: 700;
+    color: #343434;
+    margin-top: 1em;
+}
+
+.right_sec
+{
+    position: relative;
+    /* overflow: hidden; */
+    height: 60vh;
+}
+.right_sec span{
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+.right_sec span img{
+    max-width: 100%;
+    width: 300px;
+    border-radius: 8px;
+}
+.right_sec span{
+    transform: rotate(-15deg) translate(83px, 250px);
+}
+.right_sec span:nth-child(1){
+    transform: rotate(-15deg) translate(83px, 250px);
+    opacity: 0;
+    visibility: hidden;
+    animation: anime_one 5s 1s infinite ease;
+    z-index: 999;
+}
+@keyframes anime_one {
+    0%{
+        opacity: 0;
+        visibility: hidden;
+        transform: rotate(-15deg) translate(83px, 250px);
+    }
+    10%{
+        opacity: 1;
+        visibility: visible;
+        transform: rotate(-10deg) translate(83px, 250px);
+    }
+    80%{
+        opacity: 1;
+        visibility: visible;
+        transform: rotate(-10deg) translate(83px, 250px);
+    }
+    100%{
+        opacity: 0;
+        visibility: hidden;
+        transform: rotate(-15deg) translate(83px, 250px);
+    }
+
+   
+    
+}
+
+.right_sec span:nth-child(2){
+    transform: rotate(-5deg) translate(206px, 100px);
+    z-index: 888;
+    opacity: 0;
+    visibility: hidden;
+    animation: anime_two 5s 1.5s infinite ease;
+}
+@keyframes anime_two {
+    0%{
+        opacity: 0;
+        visibility: hidden;
+        transform: rotate(-15deg) translate(206px, 100px);
+    }
+    10%{
+        opacity: 1;
+        visibility: visible;
+        transform: rotate(-10deg) translate(206px, 100px);
+    }
+    80%{
+        opacity: 1;
+        visibility: visible;
+        transform: rotate(-10deg) translate(206px, 100px);
+    }
+    100%{
+        opacity: 0;
+        visibility: hidden;
+        transform: rotate(-15deg) translate(206px, 100px);
+    }
+
+   
+    
+}
+
+.right_sec span:nth-child(3){
+    transform: rotate(5deg) translate(280px, -50px);
+    z-index: 777;
+    opacity: 0;
+    visibility: hidden;
+    animation: anime_thee 5s 2s infinite ease;
+}
+@keyframes anime_thee {
+    0%{
+        opacity: 0;
+        visibility: hidden;
+        transform: rotate(-10deg) translate(280px, -50px);
+    }
+    10%{
+        opacity: 1;
+        visibility: visible;
+        transform: rotate(5deg) translate(280px, -50px);
+    }
+    80%{
+        opacity: 1;
+        visibility: visible;
+        transform: rotate(5deg) translate(280px, -50px);
+    }
+    100%{
+        opacity: 0;
+        visibility: hidden;
+        transform: rotate(-10deg) translate(280px, -50px);
+    }
+
+   
+    
+}
+
